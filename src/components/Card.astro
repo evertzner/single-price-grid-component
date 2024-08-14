@@ -1,5 +1,42 @@
 ---
-
+import Reason from './Reason.astro';
 ---
 
-Hello World
+<div
+  class='rounded-md xl:rounded-lg shadow-card flex-shrink-0 w-[311px] xl:w-[635px] overflow-hidden flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-[max-content_max-content]'
+>
+  <div
+    class='bg-white pt-7 pb-6 px-6 xl:p-10 xl:col-start-1 xl:col-end-3 xl:row-start-1 xl:row-end-2'
+  >
+    <h1 class='text-xl xl:text-2xl font-bold text-turquoise-500 mb-6'>Join our community</h1>
+    <h2 class='text-moss-400 font-bold mb-4 text-base xl:text-lg'>
+      30-day, hassle-free money back guarantee
+    </h2>
+    <p class='text-sm xl:text-base text-gray-500 leading-6'>
+      Gain access to our full library of tutorials along with expert code reviews. Perfect for any
+      developers who are serious about honing their skills.
+    </p>
+  </div>
+  <div
+    class='flex flex-col p-6 xl:p-10 text-white bg-turquoise-500 xl:row-start-2 xl:row-end-3 xl:col-start-1 xl:col-end-2'
+  >
+    <h2 class='text-lg font-bold mb-[18px]'>Monthly Subscription</h2>
+    <div class='flex gap-[11px] text-[32px] font-bold items-center mb-1'>
+      $29<span class='opacity-50 text-base'>per month</span>
+    </div>
+    <p class='mb-6'>Full access for less than $1 a day</p>
+    <button class='shadow-button bg-moss-400 py-4 rounded-md font-bold'>Sign Up</button>
+  </div>
+  <div
+    class='flex flex-col p-6 xl:p-10 text-white bg-turquoise-400 xl:row-start-2 xl:row-end-3 xl:col-start-2 xl:col-end-3'
+  >
+    <h2 class='text-lg font-bold mb-[18px]'>Why Us</h2>
+    <Reason>Tutorials by industry experts</Reason>
+    <Reason>Peer & expert code review</Reason>
+    <Reason>Coding exercises</Reason>
+    <Reason>Access to our GitHub repos</Reason>
+    <Reason>Community forum</Reason>
+    <Reason>Flashcard decks</Reason>
+    <Reason>New videos every week</Reason>
+  </div>
+</div>
